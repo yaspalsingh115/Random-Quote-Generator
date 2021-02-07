@@ -1,0 +1,199 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: rgb(42, 214, 42);
+    background: linear-gradient(black, #000099, #66c2ff, #e245cd, #000099, black);
+
+}
+.top{
+    display: flex;
+    width: 400px;
+    text-align: center;
+    color: black;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+#quote-box {
+    position: relative;
+    border: none;
+    max-width: 450px;
+    text-align: center;
+    height: auto;
+    padding: 35px 30px;
+    background-color: white;
+    border-radius: 4px;
+    padding-bottom: 20px;
+    
+}
+
+#upper {
+    font-size: 40px;
+    color: coral;
+
+}
+
+#text {
+    font-size: 35px;
+    color: rgb(236, 106, 30);
+}
+
+#author {
+    display: block;
+    text-align: right;
+    color: coral;
+}
+
+.author {
+    padding: 10px 0px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#tweet-quote {
+    font-size: 30px;
+    color: rgb(49, 45, 238);
+    transition: all .6s ease-in-out;
+}
+#tweet-quote:hover{
+    transform: scale(1.2);
+}
+#new-quote {
+    padding: 5px 15px;
+    border: none;
+    border-radius: 4px;
+    background: linear-gradient(35deg,
+    #ec2cb3,
+    #2eecdd);
+    color: white;
+    outline: none;
+    cursor: pointer;   
+}
+#new-quote:hover{
+   transform: scale(1.1);
+}
+.footer {
+    color: white;
+    padding: 20px;
+}
+.social_icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.icons{
+    margin: 5px 15px;
+    transition: all .5s ease-in-out;
+}
+.icons:hover{
+    transform: translateY(10px);
+}
+
+/*  bubble  */
+.bubble{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.star-1 {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: -20%;
+    background: linear-gradient(35deg,
+            #ec2cb3,
+            #2eecdd);
+    border-radius: 50%;
+    animation-name: up_down;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    opacity: 0.2;
+}
+
+.star-2 {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: -10%;
+    background: linear-gradient(35deg,
+            #ccffff,
+            #ffcccc);
+    border-radius: 50%;
+    animation-name: up_down;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    opacity: 0.2;
+}
+
+.star-3 {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 0%;
+    background: linear-gradient(35deg,
+            #ccffff,
+            #ffcccc);
+    border-radius: 50%;
+    animation-name: up_down;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    opacity: 0.2;
+}
+.star-4 {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 10%;
+    background: linear-gradient(35deg,
+            #ccffff,
+            #ffcccc);
+    border-radius: 50%;
+    animation-name: up_down;
+    animation-duration: 4s;
+    opacity: 0.2;
+    animation-iteration-count: infinite;
+}
+.star-5 {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 20%;
+    background: linear-gradient(35deg,
+            #ccffff,
+            #ffcccc);
+    border-radius: 50%;
+    animation-name: up_down;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    opacity: 0.2;
+}
+@keyframes up_down {
+    0% {
+        top: 0;
+    }
+50%{
+    top: 50vh;
+}
+    100% {
+        top: 70vh;
+    }
+}
+
